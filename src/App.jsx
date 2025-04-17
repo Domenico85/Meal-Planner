@@ -189,9 +189,11 @@ export default function MealPlannerApp() {
     
     <div className="flex flex-col min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-green-600 text-white p-4">
-        <h1 className="text-2xl font-bold text-center">Meal Planner & Budget Tracker</h1>
-        
+      <header className="bg-green-600 text-white p-4 flex items-center justify-between">
+        <img src="/images/logo.png" alt="Meal Planner Logo" className="w-16 h-16 rounded" />
+        <h1 className="text-2xl font-bold text-center flex-1">Meal Planner & Budget Tracker</h1>
+        <img src="/images/logo.png" alt="Meal Planner Logo" className="w-16 h-16 rounded" />
+
       </header>
       
       {/* Navigation */}
