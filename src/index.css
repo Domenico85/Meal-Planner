@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.recipe-img {
+  width: 120px;
+}

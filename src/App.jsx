@@ -3,12 +3,12 @@ import { Calendar, ShoppingBag, DollarSign, Heart, Search, PlusCircle, Trash2, C
 
 // Sample data
 const initialMeals = [
-  { id: 1, name: "Avocado Toast", type: "breakfast", ingredients: ["bread", "avocado", "salt", "pepper", "eggs"], cost: 5.50, favorite: true, image: "/api/placeholder/80/80" },
-  { id: 2, name: "Chicken Salad", type: "lunch", ingredients: ["chicken breast", "lettuce", "tomato", "cucumber", "olive oil"], cost: 8.75, favorite: false, image: "/api/placeholder/80/80" },
-  { id: 3, name: "Spaghetti Bolognese", type: "dinner", ingredients: ["spaghetti", "ground beef", "tomato sauce", "onion", "garlic"], cost: 12.30, favorite: true, image: "/api/placeholder/80/80" },
-  { id: 4, name: "Greek Yogurt with Berries", type: "breakfast", ingredients: ["greek yogurt", "mixed berries", "honey"], cost: 4.20, favorite: false, image: "/api/placeholder/80/80" },
-  { id: 5, name: "Tuna Sandwich", type: "lunch", ingredients: ["bread", "tuna", "mayonnaise", "lettuce"], cost: 6.80, favorite: false, image: "/api/placeholder/80/80" },
-  { id: 6, name: "Vegetable Stir Fry", type: "dinner", ingredients: ["rice", "broccoli", "carrot", "bell pepper", "soy sauce"], cost: 9.50, favorite: true, image: "/api/placeholder/80/80" }
+  { id: 1, name: "Avocado Toast", type: "breakfast", ingredients: ["bread", "avocado", "salt", "pepper", "eggs"], cost: 5.50, favorite: true, image: "images/Avocado-Toast.jpg" },
+  { id: 2, name: "Chicken Salad", type: "lunch", ingredients: ["chicken breast", "lettuce", "tomato", "cucumber", "olive oil"], cost: 8.75, favorite: false, image: "images/Chicken-Salad.jpg" },
+  { id: 3, name: "Spaghetti Bolognese", type: "dinner", ingredients: ["spaghetti", "ground beef", "tomato sauce", "onion", "garlic"], cost: 12.30, favorite: true, image: "images/spaghetti-bolognese.jpeg" },
+  { id: 4, name: "Greek Yogurt with Berries", type: "breakfast", ingredients: ["greek yogurt", "mixed berries", "honey"], cost: 4.20, favorite: false, image: "images/yogurt-berries.jpg" },
+  { id: 5, name: "Tuna Sandwich", type: "lunch", ingredients: ["bread", "tuna", "mayonnaise", "lettuce"], cost: 6.80, favorite: false, image: "images/tuna-sandwich.jpg" },
+  { id: 6, name: "Vegetable Stir Fry", type: "dinner", ingredients: ["rice", "broccoli", "carrot", "bell pepper", "soy sauce"], cost: 9.50, favorite: true, image: "images/Vegetable-Stir-Fry.jpg" }
 ];
 
 const initialPantryItems = ["bread", "eggs", "rice", "pasta", "olive oil", "salt", "pepper", "garlic"];
@@ -255,7 +255,7 @@ export default function MealPlannerApp() {
                     filteredMeals.map(meal => (
                       <div key={meal.id} className="p-3 border-b hover:bg-gray-100 flex items-center justify-between">
                         <div className="flex items-center">
-                          <img src={meal.image} alt={meal.name} className="w-10 h-10 rounded mr-3" />
+                          <img src={meal.image} alt={meal.name} className="recipe-img h-10 rounded mr-3" />
                           <div>
                             <h4 className="font-medium">{meal.name}</h4>
                             <p className="text-sm text-gray-500">{meal.type}</p>
@@ -531,7 +531,7 @@ export default function MealPlannerApp() {
                   .filter(meal => meal.favorite)
                   .map(meal => (
                     <div key={meal.id} className="border rounded-lg p-3 flex">
-                      <img src={meal.image} alt={meal.name} className="w-16 h-16 rounded mr-3" />
+                      <img src={meal.image} alt={meal.name} className="recipe-img h-16 rounded mr-3" />
                       <div className="flex-1">
                         <div className="flex justify-between items-start">
                           <h4 className="font-medium">{meal.name}</h4>
@@ -562,7 +562,7 @@ export default function MealPlannerApp() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {getSuggestedRecipes().map(meal => (
                   <div key={meal.id} className="border rounded-lg p-3 flex">
-                    <img src={meal.image} alt={meal.name} className="w-16 h-16 rounded mr-3" />
+                    <img src={meal.image} alt={meal.name} className="recipe-img h-16 rounded mr-3" />
                     <div className="flex-1">
                       <div className="flex justify-between items-start">
                         <h4 className="font-medium">{meal.name}</h4>
