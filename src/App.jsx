@@ -196,7 +196,7 @@ export default function MealPlannerApp() {
 
       </header>
       
-      {/* Navigation */}
+      {/* NavBar */}
       <nav className="bg-white shadow">
         <div className="flex justify-around">
           <button 
