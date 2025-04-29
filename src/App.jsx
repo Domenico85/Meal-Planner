@@ -99,7 +99,7 @@ export default function MealPlannerApp() {
   const generateShoppingList = () => {
     const ingredients = new Set();
     
-    // Add all ingredients from meals in the weekly plan
+    // Add all ingredients from meals into the weekly plan
     Object.values(weeklyPlan).forEach(dayMeals => {
       Object.values(dayMeals).forEach(meal => {
         if (meal && meal.ingredients) {
