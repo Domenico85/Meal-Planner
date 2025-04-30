@@ -137,7 +137,7 @@ export default function MealPlannerApp() {
     setExpenses(total);
   };
 
-  // Toggle favorite status of a meal
+  // Toggle favorite of a meal
   const toggleFavorite = (mealId) => {
     setMeals(prev => 
       prev.map(meal => 
