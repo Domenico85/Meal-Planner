@@ -230,7 +230,7 @@ export default function MealPlannerApp() {
         </div>
       </nav>
       
-      {/* Main Content */}
+      {/* Main */}
       <main className="flex-1 p-4">
         {/* Meal Planner Tab */}
         {activeTab === 'planner' && (
