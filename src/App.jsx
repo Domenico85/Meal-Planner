@@ -480,7 +480,7 @@ export default function MealPlannerApp() {
               </div>
             </div>
             
-            {/* Expense History Graph */}
+            {/* Expense History Graphic */}
             <h3 className="text-lg font-medium mb-3">Expense History</h3>
             <div className="bg-white rounded-lg shadow p-4 h-64 relative">
               <div className="absolute inset-0 flex items-end px-4 pb-4">
